@@ -1,0 +1,105 @@
+html{
+    scroll-behavior: smooth;
+}
+#containerFounder,#locationContainer{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(deg45,gold,transparent,black);
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+
+}
+#founderHeading,#locationHeading{
+    padding-top: 3vw;
+    width: 100%;
+    height: 10vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5vw;
+    letter-spacing: 2vw;
+    font-family: "Jersey 10", sans-serif;
+    color: rgb(0, 0, 0);
+}
+#founderInfo,#locationInfo{
+    width: 100%;
+    height: auto;
+    /* background-color: yellow; */
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+}
+#containerInfo,#containerImage,#locationMap,#locationAdd{
+    width: 500px;
+    height: 50%;
+    /* background-color: purple; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    padding: 1vw;
+    text-indent: 3vw;
+    letter-spacing: 0.1vw;
+    word-spacing: 0.2vw;
+    line-height: 3vh;
+}
+.founderName{
+    font-family: "Jersey 10", sans-serif;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 1vw;
+    padding: 2vw;
+    color: rgb(255, 0, 0);
+}
+
+.founderImage{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 100%;
+    box-shadow: 2px 2px 2px black,0px 0px 0px yellow,0px 0px 0px red,0px 0px 0px royalblue,0px 0px 0px lawngreen ;
+    animation:shadowAnimation 5s linear infinite both alternate ;
+}
+@keyframes shadowAnimation {
+    0%{
+        box-shadow: 2px 2px 2px black,20px 20px 0px yellow,-20px -20px 0px red,60px -60px 0px royalblue,-60px 60px 0px lawngreen ;
+
+    }
+    25%{
+        box-shadow: 2px 2px 2px black,-90px -90px 0px yellow,90px 90px 0px red,-90px 90px 0px royalblue,90px -90px 0px lawngreen ;
+
+    }
+    50%{
+        box-shadow: 2px 2px 2px black,60px -60px 100px yellow,-60px 60px 100px red,90px 90px 100px royalblue,-90px -90px 100px lawngreen ;
+
+    }
+    75%{
+        box-shadow: 2px 2px 2px black,-90px 60px 200px yellow,90px -60px 200px red,-20px -20px 200px royalblue,50px 20px 200px lawngreen ;
+
+    }
+    100%{
+        box-shadow: 2px 2px 2px black,0px 0px 0px yellow,0px 0px 0px red,0px 0px 0px royalblue,0px 0px 0px lawngreen ;
+
+    }
+}
+iframe{
+    width: 90%;
+    height: 30vw;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    position: relative;
+    z-index: 3;
+}
+#locationAdd{
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: bold;
+    line-height: 3vw;
+}
+#locationContainer{
+    height: auto;
+    padding-bottom: 3vh;
+}

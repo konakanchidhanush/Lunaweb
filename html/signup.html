@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna-Signup</title>
+    <link rel="icon" href="/assets/images/[removal.ai]_58d6998d-8d03-4dbf-a016-9a33b9f2852c-cars-1.png">
+    <link rel="stylesheet" href="/css/signup.css">
+    <script src="../javascript/signup.js" defer></script>
+</head>
+<body>
+    <div id="bubbleContainer">
+        <div id="bubble1" class="bubble">
+
+        </div>
+        <div id="bubble2" class="bubble">
+
+        </div>
+        <div id="bubble3" class="bubble">
+
+        </div>
+        <div id="bubble4" class="bubble">
+
+        </div>
+        <div id="bubble5" class="bubble">
+
+        </div>
+        <div id="bubble6" class="bubble">
+
+        </div>
+    </div>
+    <div id="container">
+        <div id="videoContainer">
+            <video id="signupVideo" src="/assets/video/5892345-hd_1920_1080_25fps.mp4" autoplay muted loop></video>
+        </div>
+        <div id="infoContainer">
+            <h1>Registration Form</h1>
+            <div id="name">
+                <input class="inputs" type="text" placeholder="First Name">
+                <input class="inputs" type="text" placeholder="Last Name">
+            </div>
+            <div id="conctInfo">
+                <input class="inputs wideInput" type="email" placeholder="Enter the Email">
+                <input class="inputs wideInput" type="tel" placeholder="Enter the Phone Number" minlength="10" max="10">
+                <input class="inputs wideInput" type="password" placeholder="Enter the Password">
+
+                <textarea class="inputs wideInput" id="add" placeholder="Enter Your Address"></textarea>
+                <input class="inputs wideInput" type="text" placeholder="Enter the Nearest Landmark">
+                <input class="inputs wideInput" type="tel" placeholder="Enter the Pin" minlength="6" maxlength="6">
+                <h4>Choose the City</h4>
+                <select>
+                    <option>--City Names--</option>
+                    <option>Hyderabad</option>
+                    <option>Banglore</option>
+                    <option>Vishakapatanam</option>
+                    <option>Rajuhmundry</option>
+                    <option>Chennai</option>
+                    <option>Mumbai</option>
+                </select>
+            </div>
+            <div id="signUp">
+                <input id="button" type="button" value="Signup" onclick="storeData()">
+            </div>
+        </div>
+    </div>
+    <a href="/index.html">Already have an Account?</a>
+</body>
+</html>
